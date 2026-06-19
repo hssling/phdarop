@@ -41,3 +41,5 @@ __pycache__/
 
 # kaggle staging
 /kaggle_dataset
+
+.vercel

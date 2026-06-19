@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.github
+.vercel
+code
+outputs
+kaggle_dataset
+docs
+figures
+formulas
+*.md
+!README.md
+.env*
+npm-debug.log*

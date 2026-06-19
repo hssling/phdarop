@@ -21,7 +21,7 @@ export default function RootLayout({
             <span className="brand-sub">Public Health Decision Analytics</span>
             <nav>
               <a
-                href="https://github.com"
+                href="https://github.com/hssling/phdarop"
                 target="_blank"
                 rel="noreferrer"
                 className="nav-link"

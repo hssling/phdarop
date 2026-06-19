@@ -4,6 +4,8 @@
 [![Deploy](https://github.com/hssling/phdarop/actions/workflows/deploy.yml/badge.svg)](./.github/workflows/deploy.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](#license)
 
+**🔴 Live demo: [phdarop.vercel.app](https://phdarop.vercel.app)** · Research dataset on [Kaggle](https://www.kaggle.com/datasets/jkhospital/phdarop-public-health-decision-analytics)
+
 > **Ask a public-health question in plain language → get a computed, reproducible,
 > policy-grade decision report.** Prioritization, resource optimization, attributable
 > burden, and gap diagnostics — powered by deterministic operations-research and
