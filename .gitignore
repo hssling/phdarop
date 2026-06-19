@@ -38,3 +38,6 @@ yarn-error.log*
 # python research artefacts (kept in repo history but not needed for app build)
 __pycache__/
 *.pyc
+
+# kaggle staging
+/kaggle_dataset

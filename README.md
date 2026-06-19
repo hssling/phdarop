@@ -1,7 +1,7 @@
 # PHDAROP — Public Health Decision Analytics & Resource Optimization
 
-[![CI](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)](./.github/workflows/ci.yml)
-[![Deploy](https://github.com/OWNER/REPO/actions/workflows/deploy.yml/badge.svg)](./.github/workflows/deploy.yml)
+[![CI](https://github.com/hssling/phdarop/actions/workflows/ci.yml/badge.svg)](./.github/workflows/ci.yml)
+[![Deploy](https://github.com/hssling/phdarop/actions/workflows/deploy.yml/badge.svg)](./.github/workflows/deploy.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](#license)
 
 > **Ask a public-health question in plain language → get a computed, reproducible,
