@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-test:
+    name: Lint · Typecheck · Build · Smoke
+    runs-on: ubuntu-latest
+    env:
+      PHDA_DETERMINISTIC: "1" # CI runs the deterministic core (no AI keys needed)
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Lint
+        run: npm run lint --if-present
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
+
+      - name: Smoke test (health + analyze)
+        run: |
+          npm start &
+          SERVER_PID=$!
+          npx --yes wait-on http://localhost:3000/api/health --timeout 60000
+          echo "→ /api/health"
+          curl -fsS http://localhost:3000/api/health | tee /tmp/health.json
+          echo ""
+          echo "→ /api/analyze"
+          curl -fsS -X POST http://localhost:3000/api/analyze \
+            -H "Content-Type: application/json" \
+            -d '{"question":"Where should we allocate the TB budget across districts to avert the most deaths, prioritizing poorer areas?"}' \
+            | tee /tmp/analyze.json | head -c 400
+          echo ""
+          node -e "const r=require('/tmp/analyze.json');if(!r.report||!r.markdown)process.exit(1);console.log('smoke ok: '+r.report.headline)"
+          kill $SERVER_PID || true

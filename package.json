@@ -1,0 +1,34 @@
+{
+  "name": "phdarop-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PHDAROP — Public Health Decision Analytics web app: prompt-driven, policy-grade decision analytics and resource optimization.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck"
+  },
+  "dependencies": {
+    "ai": "^5.0.0",
+    "javascript-lp-solver": "^0.4.24",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.1.6",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

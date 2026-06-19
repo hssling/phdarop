@@ -1,0 +1,291 @@
+{
+  "projects": [
+    "P01 TB allocation",
+    "P02 HIV prevention",
+    "P03 Malaria vector",
+    "P05 AMR attributable",
+    "P06 NCD cascade",
+    "P07 Mental health WF",
+    "P08 Maternal referral",
+    "P09 Child survival",
+    "P10 Nutrition multisector",
+    "P15 RTI trauma system",
+    "P16 Drowning",
+    "P17 Burns",
+    "P19 Poisoning/means",
+    "P20 Suicide portfolio",
+    "P23 Workforce redistribution",
+    "P24 Infrastructure capital",
+    "P25 Referral network",
+    "P26 Financing formula",
+    "P28 Emergency/critical care",
+    "P38 Integrated allocation"
+  ],
+  "criteria": [
+    "PH importance",
+    "Disease burden",
+    "Policy relevance",
+    "Evidence gap",
+    "Novelty",
+    "Data availability",
+    "Feasibility",
+    "Publication potential",
+    "Funding potential",
+    "Prob. implementation"
+  ],
+  "weights": {
+    "AHP": [
+      0.16,
+      0.14,
+      0.14,
+      0.09,
+      0.07,
+      0.08,
+      0.08,
+      0.08,
+      0.09,
+      0.07
+    ],
+    "BWM": [
+      0.17,
+      0.13,
+      0.13,
+      0.08,
+      0.06,
+      0.09,
+      0.09,
+      0.08,
+      0.1,
+      0.07
+    ]
+  },
+  "ranks": {
+    "AHP": [
+      3,
+      11,
+      19,
+      9,
+      7,
+      16,
+      6,
+      4,
+      13,
+      2,
+      17,
+      20,
+      15,
+      14,
+      1,
+      18,
+      12,
+      10,
+      8,
+      5
+    ],
+    "BWM": [
+      3,
+      9,
+      19,
+      10,
+      7,
+      16,
+      6,
+      4,
+      13,
+      2,
+      17,
+      20,
+      15,
+      14,
+      1,
+      18,
+      12,
+      11,
+      8,
+      5
+    ],
+    "TOPSIS": [
+      3,
+      8,
+      19,
+      13,
+      7,
+      15,
+      5,
+      4,
+      10,
+      2,
+      17,
+      20,
+      16,
+      14,
+      1,
+      18,
+      12,
+      11,
+      9,
+      6
+    ],
+    "PROMETHEE": [
+      3,
+      10,
+      19,
+      11,
+      7,
+      17,
+      6,
+      4,
+      12,
+      2,
+      16,
+      20,
+      15,
+      14,
+      1,
+      18,
+      13,
+      9,
+      8,
+      5
+    ]
+  },
+  "consensus_rank": [
+    3,
+    9,
+    19,
+    11,
+    7,
+    16,
+    6,
+    4,
+    12,
+    2,
+    17,
+    20,
+    15,
+    14,
+    1,
+    18,
+    13,
+    10,
+    8,
+    5
+  ],
+  "p_top5": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.454,
+    0.983,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.563
+  ],
+  "rank_ci": [
+    [
+      2.0,
+      3.0
+    ],
+    [
+      8.0,
+      12.0
+    ],
+    [
+      19.0,
+      19.0
+    ],
+    [
+      8.0,
+      13.0
+    ],
+    [
+      7.0,
+      9.0
+    ],
+    [
+      15.0,
+      17.0
+    ],
+    [
+      5.0,
+      6.0
+    ],
+    [
+      4.0,
+      5.0
+    ],
+    [
+      10.0,
+      13.0
+    ],
+    [
+      2.0,
+      3.0
+    ],
+    [
+      16.0,
+      18.0
+    ],
+    [
+      20.0,
+      20.0
+    ],
+    [
+      14.0,
+      16.0
+    ],
+    [
+      13.0,
+      15.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      17.0,
+      18.0
+    ],
+    [
+      12.0,
+      14.0
+    ],
+    [
+      8.0,
+      11.0
+    ],
+    [
+      8.0,
+      10.0
+    ],
+    [
+      4.0,
+      6.0
+    ]
+  ],
+  "pareto": [
+    "P01 TB allocation",
+    "P23 Workforce redistribution",
+    "P38 Integrated allocation"
+  ],
+  "spearman": {
+    "AHP~BWM": 0.995,
+    "AHP~TOPSIS": 0.97,
+    "AHP~PROMETHEE": 0.992,
+    "BWM~TOPSIS": 0.982,
+    "BWM~PROMETHEE": 0.992,
+    "TOPSIS~PROMETHEE": 0.98
+  }
+}
